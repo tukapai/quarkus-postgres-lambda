@@ -1,0 +1,10 @@
+quarkus:
+  lambda:
+    handler: "main" # https://quarkus.io/guides/amazon-lambda#choose
+  datasource:
+    db-kind: postgresql
+    username: ${username}
+    password: ${password}
+    jdbc:
+      url: ${url} # if local: jdbc:postgresql://localhost:5432/postgres
+      max-size: 16
